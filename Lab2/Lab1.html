@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    
+    <title>User Registration Form</title>
+    <link rel="stylesheet" href="styles/main.css"/>
+</head>
+
+<body>
+    <div class="heading">
+        <h1>User Registration Form</h1>
+        <hr>
+    </div>
+    
+    
+    <!--Uses text type to gather first and last name-->
+    <form method="post">
+        <div>
+            <label for="fullname"><b>Full Name:</b></label>
+            <input type="text" placeholder="First Name" name="fullname" id="fullname">
+
+            <label for="lastname"><b>Last Name:</b> </label>
+            <input type="text" placeholder="Last Name" name="lastname" id="lastname">
+            <br>    
+        </div>
+        
+        <!--Uses email type to gather valid email address-->
+        <div>
+            <label for="email"><b>Email Address:</b> </label>
+            <input type="text" placeholder="you@example.com" name="email" id="email">
+            <br>
+        </div>
+
+        <!--Used password type to obscure password on screen-->
+        <div>
+            <label for="password"><b>Password:</b> </label>
+            <input type="password" placeholder="Min. 8 characters" name="password" id="password">
+
+            <label for="confirmPassword"><b>Confirm Password:</b> </label>
+            <input type="password" placeholder="Retype Password" name="confirmPassword" id="confirmPassword">   
+        </div>
+        
+        <!-- Uses date type to add a calender and make the date selection process easy-->
+        <div>
+            <label for="dob"><B>Date of Birth:</B></label>
+            <input type="date" name="dob" id="dob">    
+        </div>
+        
+        <!--Used radio type to gather user's gender-->
+        <fieldset>
+            <div>
+                <label><b>Gender:</b></label>
+
+                <label for="gender1">Male</label>
+                <input type="radio" id="gender1" name="gender" value="gender1">
+
+                <label for="gender2">Female</label>
+                <input type="radio" id="gender2" name="gender" value="gender2">
+                <label for="gender3">Other</label>
+                <input type="radio" id="gender3" name="gender" value="gender3">
+                 
+            </div>
+        </fieldset>
+        <br>
+       <!--Uses checkbox type to get user's preferences-->
+        <fieldset>
+            <div class="    ">
+                <label><b>Preferences:</b></label>
+
+                <input type="checkbox" id="newsletter" name="preference" value="newsletter" checked>
+                <label for="newsletter"checked>Subscribe to Newsletter</label>
+
+                <input type="checkbox" id="tos" name="preference" value="tos">
+                <label for="tos">I agree to the Terms & Conditions</label>
+                
+            </div>
+        </fieldset>
+        <br>
+
+        <!--Uses country label with options to get user's country-->
+        <label for="country"><b>Country</b></label>
+        <select id="country" name="country">
+            <option selected> Select Country</option>
+            <option>Canada</option>
+
+             
+            <option>America</option>
+            <option>Mexico</option>
+        </select>
+
+        <br>
+        <br>
+
+        <!--Uses textarea to allow user to leave comments on the form-->
+        <label><b>Comments:</b></label>
+        <textarea class="border"></textarea>
+        
+        <br>
+
+        <!--Submission button for the form-->
+        <input type="submit" value="Submit">
+    </form>
+</body>

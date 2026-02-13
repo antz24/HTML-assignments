@@ -1,0 +1,38 @@
+/* Changes colour of heading*/
+.heading
+{
+    color: #24d1bc;
+}
+
+/* Selector that changes the accent colour of the checkbox for preferences */
+.accent
+{
+    accent-color: #9dc3aa;
+}
+
+/*Uses the border selector to add a border to the comments textarea */
+.border
+{
+    border: solid #000;
+}
+
+/* Changes the margin and padding to make the form fit better*/
+input
+{
+    margin: 0.3rem;
+    padding: 2px;
+}
+
+/* Changes the margin, display, and padding to make the form flow better */
+label
+{
+    display: inline-block;
+    margin: 0.25rem;
+    padding: 0.4rem;
+}
+
+/* Changes the background colour of the form */
+body
+{
+    background-color: slategray;
+}
