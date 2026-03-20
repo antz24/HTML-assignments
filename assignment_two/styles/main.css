@@ -1,0 +1,96 @@
+header {
+  position: sticky;
+  background-color: rgb(38, 38, 38);
+  display:flex;
+  justify-content: center;
+}
+
+nav {
+  display:flex;
+  gap: 3.5rem;
+  margin: 1rem;
+}
+
+nav a:link {
+  text-decoration: none;
+  color: rgb(153,153,153);
+}
+
+body {
+  font-family: segoe ui;
+}
+
+section h1 {
+  display: flex;
+  justify-content: center;
+}
+
+section p{
+  display: flex;
+  justify-content: center;
+  white-space: pre;
+  text-align:center;
+}
+
+main section a:link {
+  text-decoration: none;
+  color: rgb(153,153,153);
+  border: 1px solid rgb(38, 38, 38);
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+}
+
+main section a:hover {
+  text-decoration: none;
+  color: #FFF;
+  background-color: rgb(108,117,125);
+}
+
+[aria-label*="Product highlights"] {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem 1rem;
+  padding-bottom: 4rem;
+  margin-left: 20rem; 
+}
+
+[aria-label*="Product highlights"] article {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+ 
+}
+
+footer {
+  display:flex;
+  justify-content: center;
+  gap: 3rem;
+  
+}
+
+footer a:link {
+  text-decoration: none;
+  color: rgb(130,130,130);
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+  padding-left: 0;
+}
+
+footer h2{
+  font-size: 1.25rem;
+  font-weight: normal;
+}
+
+footer p{
+  display: flex;
+  justify-content: left;
+  font-size: 0.85rem;
+  padding-top:1.5rem;
+  padding-left: 0;
+  color: rgb(130, 130, 130);
+}
