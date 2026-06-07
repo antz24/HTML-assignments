@@ -111,5 +111,14 @@ function riskCycle()
 
 function briefingGen()
 {
-    
+    if (agentValue !== "" && locationValue !== "" && loadoutValue !== "" && objValue !== "" && riskValue !== "")
+    {
+        briefingOut.textContent = ("MISSION BRIEFING \n Agent:  " + agentValue + "\n Location:  " + locationValue + "\nWeapon:  " + loadoutValue + "\nObjective:  " + objValue + "\nRisk:  " + riskValue);
+    }
+    else
+    {
+        briefingOut.textContent = "WARNING! Selections incomplete!";
+    }
 }
+
+// This javascript was written using help from lecture content and https://stackoverflow.com/questions/9980416/how-can-i-insert-new-line-carriage-returns-into-an-element-textcontent
