@@ -3,7 +3,9 @@ const locationBtn = document.querySelector("location");
 const loadoutBtn = document.querySelector("loadout");
 const objectiveBtn = document.querySelector("objective");
 const riskBtn = document.querySelector("risk");
+const briefingBtn = document.querySelector("briefing");
 const output = document.querySelector("output");
+
 
 let agentList = ["Ghost", "Shadow", "Viper", "Nova"];
 let locationList = ["Exultia", "Mars Core", "Nekravol", "Urdak"];
