@@ -26,6 +26,9 @@ let riskValue = "";
 const briefingBtn = document.querySelector("#briefing");
 const briefingOut = document.querySelector("#outputBriefing");
 
+const randomBtn = document.querySelector("#random");
+const resetBtn = document.querySelector("#reset");
+
 let agentList = ["Doom Slayer", "Samuel Hayden", "Commander Thira", "King Novik"];
 let locationList = ["Exultia", "Mars Core", "Nekravol", "Urdak"];
 let weaponList = ["Combat Shotgun", "Heavy Assault Rifle", "Plasma Rifle", "Ballista"];
@@ -38,7 +41,8 @@ loadoutBtn.addEventListener("click", loadoutCycle);
 objectiveBtn.addEventListener("click", objectiveCycle);
 riskBtn.addEventListener("click", riskCycle);
 briefingBtn.addEventListener("click", briefingGen);
-
+randomBtn.addEventListener("click", randomizer);
+resetBtn.addEventListener("click", resetMission);
 function agentCycle()
 {
     if (agentCounter === agentList.length - 1)
@@ -121,4 +125,43 @@ function briefingGen()
     }
 }
 
-// This javascript was written using help from lecture content and https://stackoverflow.com/questions/9980416/how-can-i-insert-new-line-carriage-returns-into-an-element-textcontent
+function randomizer()
+{
+    agentValue = agentList[Math.floor(Math.random() * 4)];
+    agentOut.textContent = agentValue;
+
+    locationValue = locationList[Math.floor(Math.random() * 4)];
+    locationOut.textContent = locationValue;
+
+    loadoutValue = weaponList[Math.floor(Math.random() * 4)];
+    loadoutOut.textContent = loadoutValue;
+
+    objValue = objectiveList[Math.floor(Math.random() * 3)];
+    objOut.textContent = objValue;
+
+    riskValue = riskList[Math.floor(Math.random() * 4)];
+    riskOut.textContent = riskValue;
+
+    briefingOut.textContent = ("MISSION BRIEFING \n Agent:  " + agentValue + "\n Location:  " + locationValue + "\nWeapon:  " + loadoutValue + "\nObjective:  " + objValue + "\nRisk:  " + riskValue);
+}
+
+function resetMission()
+{
+    agentValue = "";
+    agentOut.textContent = agentValue;
+    
+    locationValue = "";
+    locationOut.textContent = locationValue;
+
+    loadoutValue = "";
+    loadoutOut.textContent = loadoutValue;
+
+    objValue = "";
+    objOut.textContent = objValue;
+
+    riskValue = "";
+    riskOut.textContent = riskValue;
+
+    briefingOut.textContent = "";
+}
+// This javascript was written using help from lecture content, https://stackoverflow.com/questions/9980416/how-can-i-insert-new-line-carriage-returns-into-an-element-textcontent and https://www.w3schools.com/JS/js_random.asp
