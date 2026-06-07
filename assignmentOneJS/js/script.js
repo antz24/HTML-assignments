@@ -33,6 +33,7 @@ agentBtn.addEventListener("click", agentCycle);
 locationBtn.addEventListener("click", locationCycle);
 loadoutBtn.addEventListener("click", loadoutCycle);
 objectiveBtn.addEventListener("click", objectiveCycle);
+riskBtn.addEventListener("click", riskCycle);
 
 function agentCycle()
 {
@@ -84,4 +85,17 @@ function objectiveCycle()
             objCounter++;
         }
     objOut.textContent = objectiveList[objCounter];
+}
+
+function riskCycle()
+{
+     if (riskCounter === riskList.length - 1)
+        {
+            riskCounter = 0;
+        }
+        else
+        {
+            riskCounter++;
+        }
+    riskOut.textContent = riskList[riskCounter];
 }
