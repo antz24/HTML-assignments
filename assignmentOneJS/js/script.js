@@ -12,3 +12,10 @@ let locationList = ["Exultia", "Mars Core", "Nekravol", "Urdak"];
 let weaponList = ["Combat Shotgun", "Heavy Assault Rifle", "Plasma Rifle", "Ballista"];
 let objectiveList = ["Rescue Hostage", "Retrieve Briefcase", "Sabotage Supply Chain"];
 let riskList = ["Low", "Medium", "High", "Very High"];
+
+agentBtn.addEventListener("click", agentCycle);
+
+function agentCycle()
+{
+    
+}
