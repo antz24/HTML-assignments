@@ -31,6 +31,8 @@ let riskList = ["Low", "Medium", "High", "Very High"];
 
 agentBtn.addEventListener("click", agentCycle);
 locationBtn.addEventListener("click", locationCycle);
+loadoutBtn.addEventListener("click", loadoutCycle);
+objectiveBtn.addEventListener("click", objectiveCycle);
 
 function agentCycle()
 {
@@ -56,4 +58,30 @@ function locationCycle()
             locationCounter++;
         }
     locationOut.textContent = locationList[locationCounter];
+}
+
+function loadoutCycle()
+{
+     if (loadoutCounter === weaponList.length - 1)
+        {
+            loadoutCounter = 0;
+        }
+        else
+        {
+            loadoutCounter++;
+        }
+    loadoutOut.textContent = weaponList[loadoutCounter];
+}
+
+function objectiveCycle()
+{
+     if (objCounter === objectiveList.length - 1)
+        {
+            objCounter = 0;
+        }
+        else
+        {
+            objCounter++;
+        }
+    objOut.textContent = objectiveList[objCounter];
 }
