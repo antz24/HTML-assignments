@@ -117,7 +117,7 @@ function briefingGen()
 {
     if (agentValue !== "" && locationValue !== "" && loadoutValue !== "" && objValue !== "" && riskValue !== "")
     {
-        briefingOut.textContent = ("MISSION BRIEFING \n Agent:  " + agentValue + "\n Location:  " + locationValue + "\nWeapon:  " + loadoutValue + "\nObjective:  " + objValue + "\nRisk:  " + riskValue);
+        briefingOut.textContent = ("MISSION BRIEFING \n\n Agent:  " + agentValue + "\n Location:  " + locationValue + "\nWeapon:  " + loadoutValue + "\nObjective:  " + objValue + "\nRisk:  " + riskValue);
     }
     else
     {
@@ -142,7 +142,7 @@ function randomizer()
     riskValue = riskList[Math.floor(Math.random() * 4)];
     riskOut.textContent = riskValue;
 
-    briefingOut.textContent = ("MISSION BRIEFING \n Agent:  " + agentValue + "\n Location:  " + locationValue + "\nWeapon:  " + loadoutValue + "\nObjective:  " + objValue + "\nRisk:  " + riskValue);
+    briefingOut.textContent = ("MISSION BRIEFING \n\n Agent:  " + agentValue + "\n Location:  " + locationValue + "\nWeapon:  " + loadoutValue + "\nObjective:  " + objValue + "\nRisk:  " + riskValue);
 }
 
 function resetMission()

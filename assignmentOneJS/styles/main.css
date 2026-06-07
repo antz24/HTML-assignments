@@ -1,3 +1,32 @@
+body {
+    background-color: #232323;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    padding-bottom: 5rem;
+}
+
 p {
     white-space: pre-line;
+    color: #01FF99;
+    padding-top: 1rem;
 }
+h1 {
+    color: #fff;
+    margin-left: 40rem;
+}
+button {
+    background-color: #01FF99;
+    border-color: #aaa;
+}
+
+#briefingDiv {
+    margin-left: 40rem;
+}
+
+#briefingDiv .p {
+    font-size: 5rem;
+}
+
