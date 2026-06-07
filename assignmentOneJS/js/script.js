@@ -1,22 +1,22 @@
 const agentBtn = document.querySelector("#agent");
 const agentOut = document.querySelector("#outputAgent");
-let agentCounter = 0;
+let agentCounter = -1;
 
 const locationBtn = document.querySelector("#location");
 const locationOut = document.querySelector("#outputLocation");
-let locationCounter = 0;
+let locationCounter = -1;
 
 const loadoutBtn = document.querySelector("#loadout");
 const loadoutOut = document.querySelector("#outputLoadout");
-let loadoutCounter = 0;
+let loadoutCounter = -1;
 
 const objectiveBtn = document.querySelector("#objective");
 const objOut = document.querySelector("#outputObj");
-let objCounter = 0;
+let objCounter = -1;
 
 const riskBtn = document.querySelector("#risk");
 const riskOut = document.querySelector("#outputRisk");
-let riskCounter = 0;
+let riskCounter = -1;
 
 const briefingBtn = document.querySelector("#briefing");
 const briefingOut = document.querySelector("#outputBriefing");
@@ -34,8 +34,6 @@ locationBtn.addEventListener("click", locationCycle);
 
 function agentCycle()
 {
-    
-
     if (agentCounter === agentList.length - 1)
     {
         agentCounter = 0;
@@ -49,5 +47,13 @@ function agentCycle()
 
 function locationCycle()
 {
-
+     if (locationCounter === locationList.length - 1)
+        {
+            locationCounter = 0;
+        }
+        else
+        {
+            locationCounter++;
+        }
+    locationOut.textContent = locationList[locationCounter];
 }
