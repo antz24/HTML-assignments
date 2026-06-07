@@ -1,10 +1,21 @@
 const agentBtn = document.querySelector("agent");
+const agentOut = document.querySelector("outputAgent");
+
 const locationBtn = document.querySelector("location");
+const locationOut = document.querySelector("outputLocation");
+
 const loadoutBtn = document.querySelector("loadout");
+const loadoutOut = document.querySelector("outputLoadout");
+
 const objectiveBtn = document.querySelector("objective");
+const objOut = document.querySelector("outputObj");
+
 const riskBtn = document.querySelector("risk");
+const riskOUt = document.querySelector("outputRisk");
+
 const briefingBtn = document.querySelector("briefing");
-const output = document.querySelector("output");
+const briefingOut = document.querySelector("outputBriefing");
+
 
 
 let agentList = ["Ghost", "Shadow", "Viper", "Nova"];
