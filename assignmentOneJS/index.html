@@ -10,40 +10,52 @@
 
     <body>
         <h1>Mission Control</h1>
+
+        <!--Contains the buttons and paragraphs for each piece of controls -->
         <main>
-            <div class="category">
+
+            <!--Div containing button and paragraph for agent selection-->
+            <div>
                 <button id="agent">Select your Agent</button>
                 <p id="outputAgent"></p>
             </div>
 
-            <div class="category">
+            <!--Div containing button and paragraph for location selection-->
+            <div>
                 <button id="location">Mission Location</button>
                 <p id="outputLocation"></p>
             </div>
 
-            <div class="category">
+            <!--Div containing button and paragraph for loadout selection-->
+            <div>
                 <button id="loadout">Weapon Loadout</button>
                 <p id="outputLoadout"></p>
             </div>
             
-            <div class="category">
+            <!--Div containing button and paragraph for objective selection-->
+            <div>
                 <button id="objective">Mission Objective</button>
                 <p id="outputObj"></p>
             </div>
 
-            <div class="category">
+            <!--Div containing button and paragraph for mission risk selection-->
+            <div>
                 <button id="risk">Risk Level</button>
                 <p id="outputRisk"></p>
             </div>
 
+            <!--Div containing button to randomize mission information-->
             <div id="randomMission">
                 <button id="random">Randomize Mission</button>
             </div>
-            
+
+            <!--Div containing button to reset all mission information-->
             <div id="resetBtn">
                 <button id="reset">Reset Mission Information</button>
             </div>
         </main>
+
+        <!--Div containing button and paragraph for the mission briefing-->
         <div id="briefingDiv">
             <button id="briefing">Launch Mission</button>
             <p id="outputBriefing"></p>
