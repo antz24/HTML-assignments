@@ -1,27 +1,30 @@
 const agentBtn = document.querySelector("#agent");
 const agentOut = document.querySelector("#outputAgent");
 let agentCounter = -1;
+let agentValue = "";
 
 const locationBtn = document.querySelector("#location");
 const locationOut = document.querySelector("#outputLocation");
 let locationCounter = -1;
+let locationValue = "";
 
 const loadoutBtn = document.querySelector("#loadout");
 const loadoutOut = document.querySelector("#outputLoadout");
 let loadoutCounter = -1;
+let loadoutValue = "";
 
 const objectiveBtn = document.querySelector("#objective");
 const objOut = document.querySelector("#outputObj");
 let objCounter = -1;
+let objValue = "";
 
 const riskBtn = document.querySelector("#risk");
 const riskOut = document.querySelector("#outputRisk");
 let riskCounter = -1;
+let riskValue = "";
 
 const briefingBtn = document.querySelector("#briefing");
 const briefingOut = document.querySelector("#outputBriefing");
-
-
 
 let agentList = ["Doom Slayer", "Samuel Hayden", "Commander Thira", "King Novik"];
 let locationList = ["Exultia", "Mars Core", "Nekravol", "Urdak"];
@@ -34,6 +37,7 @@ locationBtn.addEventListener("click", locationCycle);
 loadoutBtn.addEventListener("click", loadoutCycle);
 objectiveBtn.addEventListener("click", objectiveCycle);
 riskBtn.addEventListener("click", riskCycle);
+briefingBtn.addEventListener("click", briefingGen);
 
 function agentCycle()
 {
@@ -45,7 +49,8 @@ function agentCycle()
     {
         agentCounter++;
     }
-    agentOut.textContent = agentList[agentCounter];
+    agentValue = agentList[agentCounter];
+    agentOut.textContent = agentValue;
 }
 
 function locationCycle()
@@ -58,7 +63,8 @@ function locationCycle()
         {
             locationCounter++;
         }
-    locationOut.textContent = locationList[locationCounter];
+    locationValue = locationList[locationCounter];
+    locationOut.textContent = locationValue;
 }
 
 function loadoutCycle()
@@ -71,7 +77,8 @@ function loadoutCycle()
         {
             loadoutCounter++;
         }
-    loadoutOut.textContent = weaponList[loadoutCounter];
+    loadoutValue = weaponList[loadoutCounter];
+    loadoutOut.textContent = loadoutValue;
 }
 
 function objectiveCycle()
@@ -84,7 +91,8 @@ function objectiveCycle()
         {
             objCounter++;
         }
-    objOut.textContent = objectiveList[objCounter];
+    objValue = objectiveList[objCounter];
+    objOut.textContent = objValue;
 }
 
 function riskCycle()
@@ -97,5 +105,11 @@ function riskCycle()
         {
             riskCounter++;
         }
-    riskOut.textContent = riskList[riskCounter];
+    riskValue = riskList[riskCounter];
+    riskOut.textContent = riskValue;
+}
+
+function briefingGen()
+{
+    
 }
